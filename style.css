@@ -1,0 +1,543 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0px 5px 15px rgba(0,0,0, 0.06);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#navbar ul{
+    display: flex;
+    padding: 0 20px;
+}
+#navbar ul li{
+    padding: 0 20px;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.4s ease;
+    position: relative;
+
+}
+#navbar ul li a:hover,
+#navbar ul li a.active{
+    color: orangered;
+    transition: all 0.4s;
+}
+#navbar ul li a.active::after,
+#navbar ul li a:hover::after{
+    content: " ";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    background-color: orangered;
+}
+/**/
+.logo{
+    font-size: 25px ;
+    text-decoration: none;
+    color: rgb(243, 11, 11);
+    font-weight: 600;
+    padding: 0px 40px;
+}
+
+/**/
+#hero{
+    background-image: url(image/hero4.png);
+    width: 100%;
+    height: 90vh;
+    background-position: top 25% right 0%;
+    background-size: cover;
+   
+    
+}
+.container-hero-text{
+    position: relative;
+    left: 10%;
+    top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    padding: 0px 20px;
+
+}
+.shop-now-botton{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    padding: 5px 10px;
+}
+
+/**/
+#feature{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 40px 0px;
+    overflow: hidden;
+
+}
+#feature h1{
+    text-align: center;
+    margin: 20px;
+}
+.image{
+    width: 200px;
+    border: 1px solid rgb(230, 227, 227);
+  
+    text-align: center;
+    padding: 20px 30px;
+    box-shadow: 20px 20px 35px rgba(0,0,0, 0.03) ;
+    border-radius: 10px;
+   
+}
+.image img{
+    width: 100%;
+}
+.image h4{
+    background-color: rgba(165, 42, 42, 0.321);
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-size: 12px;
+
+}
+.image:hover{
+    box-shadow: 10px 10px 54px rgba(72, 64, 64, 0.081);
+}
+.image:nth-child(1) h4{
+    background-color: aqua;
+}
+.image:nth-child(2) h4{
+    background-color: rgba(234, 255, 0, 0.451);
+}
+.image:nth-child(3) h4{
+    background-color:blueviolet;
+}
+.image:nth-child(4) h4{
+    background-color: rgb(0, 255, 136);
+}
+.image:nth-child(5) h4{
+    background-color: rgba(255, 13, 0, 0.365);
+}
+.image:nth-child(6) h4{
+    background-color: rgba(0, 119, 255, 0.706);
+}
+#production{
+    overflow: hidden;
+} 
+
+.product-cont{
+    width: 20%;
+    text-align:left;
+    border: 1px solid rgba(118, 113, 113, 0.46);
+    margin: 20px 20px;
+    box-shadow: 20px 20px 35px rgba(0,0,0, 0.06);
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    padding: 15px;
+    transition: all 0.4 s ease;
+    cursor: pointer;
+}
+.product-cont:hover{
+    box-shadow: 10px 10px 50px rgba(118, 113, 113, 0.46);
+}
+.cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#product h1{
+    text-align: center;
+}
+
+.product-cont img{
+    width: 100%;
+ 
+    border-radius: 30px;
+
+
+}
+.product-cont h4,h3 ,h5{
+   text-align: start;
+   padding: 2px 20px;
+}
+.review{
+    text-align: start;
+    color: yellow;
+    padding: 0px 20px;
+    font-size: 16px;
+}
+.cart{
+    position: absolute;
+    bottom: 20px ;
+    right: 20px;
+    width: 40px;
+    background-color: rgb(10, 130, 130);
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+}
+.cart:hover{
+    background-color: coral;
+}
+
+#banner{
+    width: 100%;
+    height: 50vh;
+    margin: 40px 0px;
+    background-image: url(image/banner/b2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+
+
+}
+#banner h3{
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+}
+#banner p{
+    color: white;
+}
+
+
+#product-2{
+    text-align: center;
+}
+#bannner-2{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#banner-3{
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.banner-box-1{
+    border: 1px solid rgba(131, 128, 128, 0.315);
+    width: 45%;
+    height: 60vh;
+    margin: 20px;
+    background-image: url(image/banner/b17.jpg);
+    background-position: center;
+    background-size: cover;
+    position:relative;
+    box-shadow: 10px 20px 50px rgba(118, 113, 113, 0.46);
+
+}
+.banner-box-2{
+    border: 1px solid rgba(131, 128, 128, 0.315);
+    width: 45%;
+    height: 60vh;
+    margin: 20px;
+    background-image: url(image/banner/b18.jpg);
+    background-position: center;
+    background-size: cover;
+    position:relative;
+    box-shadow: 10px 20px 50px rgba(118, 113, 113, 0.46);
+
+}
+.banner-box-3{
+    border: 1px solid rgba(131, 128, 128, 0.315);
+    width: 30%;
+    height: 40vh;
+    margin: 20px;
+    background-image: url(image/banner/b7.jpg);
+    background-position: center;
+    background-size: cover;
+    position:relative;
+    box-shadow: 10px 20px 50px rgba(118, 113, 113, 0.46);
+
+}
+.banner-box-4{
+    border: 1px solid rgba(131, 128, 128, 0.315);
+    width: 30%;
+    height: 40vh;
+    margin: 20px;
+    background-image: url(image/banner/b10.jpg);
+    background-position: center;
+    background-size: cover;
+    position:relative;
+    box-shadow: 10px 20px 50px rgba(118, 113, 113, 0.46);
+
+}
+.banner-box-5{
+    border: 1px solid rgba(131, 128, 128, 0.315);
+    width: 30%;
+    height: 40vh;
+    margin: 20px;
+    background-image: url(image/banner/b4.jpg);
+    background-position: center;
+    background-size: cover;
+    position:relative;
+    box-shadow: 10px 20px 50px rgba(118, 113, 113, 0.46);
+
+}
+.box-text{
+    position: absolute;
+    left: 40px;
+    top: 150px;
+}
+.btn-1{
+    background-color: transparent;
+    padding: 5px 20px ;
+    color: blanchedalmond;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    border:1px solid rgb(7, 7, 7);
+    margin-top: 15px;
+}
+.btn-1:hover{
+    background-color: rgb(223, 45, 0);
+    color: black;
+}
+
+
+#banner-4{
+    background-image: url(image/about/banner.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0px;
+    position: relative;
+}
+.banner-4-singh-form{
+    width: 40%;
+    height: 50px;
+    margin-right: 100px;
+    padding: 5px 10px;
+    color: rgb(9, 9, 9);
+}
+.banner-4-text{
+    font-size: 40px;
+    padding: 0px 40px;
+    color: orangered;
+}
+.banner-4-singh-btm{
+    padding: 16px 55px;
+    position: absolute;
+    right: 0;
+    margin-right: 100px;
+    border: none;
+    background-color: aqua;
+    cursor: pointer;
+    transition: all 0.4s;
+
+
+}
+.banner-4-singh-btm:hover{
+    background-color: orangered;
+}
+
+#contect-portion{
+    padding-bottom: 20px;
+    
+}
+
+.cont-0{
+    display: flex;
+    justify-content:space-between;
+    padding: 10px 70px;
+    margin: 0px 40px;
+}
+.cont-1 li{
+    font-size: 16px;
+    list-style: none;
+}
+.cont-1 li a{
+   text-decoration: none;
+   line-height: 30px;
+   color: black;
+}
+.cont-3{
+    
+}
+.links{
+    text-align: center;
+}
+#contect-portion h3{
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    text-align: center;
+
+}
+.icon-2{
+    font-size: 25px;
+    padding: 10px 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.icon-2:hover{
+    color: rgb(11, 11, 11);
+}
+#foot{
+    text-align: center;
+    padding: 20px 50px;
+    position: relative;
+}
+#foot::after{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.618);
+    width: 90%;
+    height: 3px;
+    position:absolute;
+    top: 0;
+    left: 5%;
+}
+.nav-ic{
+    display: none;
+}
+#close{
+    display: none;
+}
+
+
+
+
+#background-blog-1{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(image/about/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.main-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin: 20px;
+    
+
+
+}
+.img-cont-1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+   
+}
+.img-cont-1 img{
+    width: 100%;
+   
+   
+}
+
+.img-cont-1 img:hover{
+    display: flex;border: 1px solid rgba(0, 0, 0, 0.201);
+    box-shadow: 10px 10px 55px rgba(0,0,0, 0.06);
+    
+}
+
+.sub-img-cont-1{
+    display: flex;
+    width: 20%;
+   
+    
+}
+.sub-img-cont-1 img{
+    display: flex;
+    width: 100%;
+    margin: 10px 10px;
+    
+}
+.sub-img-cont-1 img:hover{
+    display: flex;border: 1px solid rgba(0, 0, 0, 0.201);
+    box-shadow: 10px 10px 55px rgba(0,0,0, 0.06);
+    
+}
+
+
+.text-cont-1{
+    position: relative;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-cont-1 span,select,input{
+    padding:6px;
+    margin: 5px 0px;
+
+}
+.text-cont-1 select{
+    width: 100px;
+}
+.text-cont-1 p{
+    font-size: 16px;
+    padding-right: 300px;
+}
+.text-cont-1 h6{
+    font-size: 18px;
+    margin: 10px 0px;
+}
+.text-cont-1 span{
+    font-size: 28px;
+
+}
+.val-1{
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    
+
+}
+.val-2{
+    width: 100px;
+    padding: 10px;
+    background-color: brown;
+    color: wheat;
+    border: none;
+    transition: 0.4s ease
+
+}
+.val-2:hover{
+    
+    background-color: rgb(9, 9, 227);
+    color: wheat;
+    border: none;
+    
+
+}
